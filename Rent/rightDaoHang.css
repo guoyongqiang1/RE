@@ -1,0 +1,35 @@
+ul li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.f2{
+    padding: 0px;
+    position: fixed;
+    top: 37%;
+    right: 0px;
+    width: 40px;
+    height: 167px;
+    border: 1px solid black;
+}
+.f2 li{
+    width: 40px;
+    height: 56px;
+    border-bottom: 1px solid black;
+    background-image:url(https://res.5i5j.com/pc/common/images/new-rightBar.png);
+}
+.f2 li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 4px;
+    padding-top: 8px;
+}
+.f2 .guanzhu{
+background-position: 0 -40px;
+}
+.f2 .weituo{
+    background-position: 0 -95px;}
+.f2 .kefu{
+    background-position: 0 -305px;
+}

@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75DED4D1-22B3-4F3A-9EE7-2E83B876396E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rent</RootNamespace>
+    <AssemblyName>Rent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addHouseTiShi.aspx" />
+    <Content Include="adminEditInfo.aspx" />
+    <Content Include="adminKnow.aspx" />
+    <Content Include="agentMainInfo.aspx" />
+    <Content Include="backgroundImage.gif" />
+    <Content Include="backImage.jpg" />
+    <Content Include="bin\Rent.dll" />
+    <Content Include="bin\Rent.pdb" />
+    <Content Include="changeImages.css" />
+    <Content Include="changeImages.js" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\login.css" />
+    <Content Include="edit.aspx" />
+    <Content Include="Findpwd.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="house.aspx" />
+    <Content Include="houseInfo.aspx" />
+    <Content Include="houseknow.aspx" />
+    <Content Include="houseXiangXiInfo.aspx" />
+    <Content Include="InfoTiShiPage.aspx" />
+    <Content Include="jieZhangPage.aspx" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="likeagent.aspx" />
+    <Content Include="Likehouse.aspx" />
+    <Content Include="Login-ap.aspx" />
+    <Content Include="Login-zhuce.aspx" />
+    <Content Include="logo.jpg" />
+    <Content Include="main.aspx" />
+    <Content Include="main.css" />
+    <Content Include="obj\Debug\Rent.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Rent.dll" />
+    <Content Include="obj\Debug\Rent.pdb" />
+    <Content Include="Outsea.aspx" />
+    <Content Include="ownerAgentHouseInfo.css" />
+    <Content Include="ownerEditInfo.aspx" />
+    <Content Include="ownerHouseInfo.aspx" />
+    <Content Include="ownerMainInfo.aspx" />
+    <Content Include="picts\1.jpg" />
+    <Content Include="picts\2.jpg" />
+    <Content Include="picts\25541a676ddb5718.jpg" />
+    <Content Include="picts\3.jpg" />
+    <Content Include="picts\login.jpg" />
+    <Content Include="picts\self.jpg" />
+    <Content Include="picts\sss.jpg" />
+    <Content Include="picts\tu.jpg" />
+    <Content Include="picts\交接后续.jpg" />
+    <Content Include="picts\准备买房.jpg" />
+    <Content Include="picts\准备租房.jpg" />
+    <Content Include="picts\海外咨询.jpg" />
+    <Content Include="picts\看房选房.jpg" />
+    <Content Include="picts\退房解约.jpg" />
+    <Content Include="rightDaoHang.css" />
+    <Content Include="self1.aspx" />
+    <Content Include="TuiChu.aspx" />
+    <Content Include="userDaiJieZhangHouse.aspx" />
+    <Content Include="userShouCang.aspx" />
+    <Content Include="userShouCangAgent.aspx" />
+    <Content Include="userShouCangAgentLianJie.aspx" />
+    <Content Include="userShouCangLianJie.aspx" />
+    <Content Include="userxinxi.aspx" />
+    <Content Include="userYiZuHouse.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="YaoYuYue.aspx" />
+    <Content Include="ZhuXiao.aspx" />
+    <Content Include="中原_帝湖.aspx" />
+    <Content Include="中原_碧沙岗.aspx" />
+    <Content Include="中原_航海西路.aspx" />
+    <Content Include="中原路段.aspx" />
+    <Content Include="二七_大学中路.aspx" />
+    <Content Include="二七_碧云路.aspx" />
+    <Content Include="二七_长江路.aspx" />
+    <Content Include="二七路段.aspx" />
+    <Content Include="增加房源.aspx" />
+    <Content Include="客服.aspx" />
+    <Content Include="导航.css" />
+    <Content Include="我爱我家郑州.aspx" />
+    <Content Include="房东info2.0.aspx" />
+    <Content Include="管理员管理.aspx" />
+    <Content Include="经纪人.aspx" />
+    <Content Include="经纪人个人信息.aspx" />
+    <Content Include="经纪人展示.aspx" />
+    <Content Include="经纪人管理.aspx" />
+    <Content Include="金水_博颂路.aspx" />
+    <Content Include="金水_绿城广场.aspx" />
+    <Content Include="金水_黄河路.aspx" />
+    <Content Include="金水路段.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addHouseTiShi.aspx.cs">
+      <DependentUpon>addHouseTiShi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addHouseTiShi.aspx.designer.cs">
+      <DependentUpon>addHouseTiShi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs" />
+    <Compile Include="adminEditInfo.aspx.cs">
+      <DependentUpon>adminEditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminEditInfo.aspx.designer.cs">
+      <DependentUpon>adminEditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminKnow.aspx.cs">
+      <DependentUpon>adminKnow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminKnow.aspx.designer.cs">
+      <DependentUpon>adminKnow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agent.cs" />
+    <Compile Include="agentMainInfo.aspx.cs">
+      <DependentUpon>agentMainInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agentMainInfo.aspx.designer.cs">
+      <DependentUpon>agentMainInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommDB.cs" />
+    <Compile Include="edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Findpwd.aspx.cs">
+      <DependentUpon>Findpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Findpwd.aspx.designer.cs">
+      <DependentUpon>Findpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="header.Master.cs">
+      <DependentUpon>header.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="header.Master.designer.cs">
+      <DependentUpon>header.Master</DependentUpon>
+    </Compile>
+    <Compile Include="headerAndFooter.Master.cs">
+      <DependentUpon>headerAndFooter.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="headerAndFooter.Master.designer.cs">
+      <DependentUpon>headerAndFooter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="house.aspx.cs">
+      <DependentUpon>house.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="house.aspx.designer.cs">
+      <DependentUpon>house.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="House.cs" />
+    <Compile Include="houseInfo.aspx.cs">
+      <DependentUpon>houseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="houseInfo.aspx.designer.cs">
+      <DependentUpon>houseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="houseknow.aspx.cs">
+      <DependentUpon>houseknow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="houseknow.aspx.designer.cs">
+      <DependentUpon>houseknow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="houseXiangXiInfo.aspx.cs">
+      <DependentUpon>houseXiangXiInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="houseXiangXiInfo.aspx.designer.cs">
+      <DependentUpon>houseXiangXiInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoTiShiPage.aspx.cs">
+      <DependentUpon>InfoTiShiPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoTiShiPage.aspx.designer.cs">
+      <DependentUpon>InfoTiShiPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jieZhangPage.aspx.cs">
+      <DependentUpon>jieZhangPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jieZhangPage.aspx.designer.cs">
+      <DependentUpon>jieZhangPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jjr.cs" />
+    <Compile Include="likeagent.aspx.cs">
+      <DependentUpon>likeagent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="likeagent.aspx.designer.cs">
+      <DependentUpon>likeagent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Likehouse.aspx.cs">
+      <DependentUpon>Likehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Likehouse.aspx.designer.cs">
+      <DependentUpon>Likehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login-ap.aspx.cs">
+      <DependentUpon>Login-ap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login-ap.aspx.designer.cs">
+      <DependentUpon>Login-ap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login-zhuce.aspx.cs">
+      <DependentUpon>Login-zhuce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login-zhuce.aspx.designer.cs">
+      <DependentUpon>Login-zhuce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outsea.aspx.cs">
+      <DependentUpon>Outsea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outsea.aspx.designer.cs">
+      <DependentUpon>Outsea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ownerEditInfo.aspx.cs">
+      <DependentUpon>ownerEditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ownerEditInfo.aspx.designer.cs">
+      <DependentUpon>ownerEditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ownerMainInfo.aspx.cs">
+      <DependentUpon>ownerMainInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ownerMainInfo.aspx.designer.cs">
+      <DependentUpon>ownerMainInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="self1.aspx.cs">
+      <DependentUpon>self1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="self1.aspx.designer.cs">
+      <DependentUpon>self1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs" />
+    <Compile Include="userDaiJieZhangHouse.aspx.cs">
+      <DependentUpon>userDaiJieZhangHouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userDaiJieZhangHouse.aspx.designer.cs">
+      <DependentUpon>userDaiJieZhangHouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs" />
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Owner.cs" />
+    <Compile Include="ownerHouseInfo.aspx.cs">
+      <DependentUpon>ownerHouseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ownerHouseInfo.aspx.designer.cs">
+      <DependentUpon>ownerHouseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TuiChu.aspx.cs">
+      <DependentUpon>TuiChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TuiChu.aspx.designer.cs">
+      <DependentUpon>TuiChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userShouCang.aspx.cs">
+      <DependentUpon>userShouCang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userShouCang.aspx.designer.cs">
+      <DependentUpon>userShouCang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userShouCangAgent.aspx.cs">
+      <DependentUpon>userShouCangAgent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userShouCangAgent.aspx.designer.cs">
+      <DependentUpon>userShouCangAgent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userShouCangAgentLianJie.aspx.cs">
+      <DependentUpon>userShouCangAgentLianJie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userShouCangAgentLianJie.aspx.designer.cs">
+      <DependentUpon>userShouCangAgentLianJie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userShouCangLianJie.aspx.cs">
+      <DependentUpon>userShouCangLianJie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userShouCangLianJie.aspx.designer.cs">
+      <DependentUpon>userShouCangLianJie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userxinxi.aspx.cs">
+      <DependentUpon>userxinxi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userxinxi.aspx.designer.cs">
+      <DependentUpon>userxinxi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userYiZuHouse.aspx.cs">
+      <DependentUpon>userYiZuHouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userYiZuHouse.aspx.designer.cs">
+      <DependentUpon>userYiZuHouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaoYuYue.aspx.cs">
+      <DependentUpon>YaoYuYue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaoYuYue.aspx.designer.cs">
+      <DependentUpon>YaoYuYue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZhuXiao.aspx.cs">
+      <DependentUpon>ZhuXiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZhuXiao.aspx.designer.cs">
+      <DependentUpon>ZhuXiao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="中原_帝湖.aspx.cs">
+      <DependentUpon>中原_帝湖.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="中原_帝湖.aspx.designer.cs">
+      <DependentUpon>中原_帝湖.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="中原_碧沙岗.aspx.cs">
+      <DependentUpon>中原_碧沙岗.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="中原_碧沙岗.aspx.designer.cs">
+      <DependentUpon>中原_碧沙岗.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="中原_航海西路.aspx.cs">
+      <DependentUpon>中原_航海西路.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="中原_航海西路.aspx.designer.cs">
+      <DependentUpon>中原_航海西路.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="中原路段.aspx.cs">
+      <DependentUpon>中原路段.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="中原路段.aspx.designer.cs">
+      <DependentUpon>中原路段.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="二七_大学中路.aspx.cs">
+      <DependentUpon>二七_大学中路.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="二七_大学中路.aspx.designer.cs">
+      <DependentUpon>二七_大学中路.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="二七_碧云路.aspx.cs">
+      <DependentUpon>二七_碧云路.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="二七_碧云路.aspx.designer.cs">
+      <DependentUpon>二七_碧云路.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="二七_长江路.aspx.cs">
+      <DependentUpon>二七_长江路.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="二七_长江路.aspx.designer.cs">
+      <DependentUpon>二七_长江路.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="二七路段.aspx.cs">
+      <DependentUpon>二七路段.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="二七路段.aspx.designer.cs">
+      <DependentUpon>二七路段.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="增加房源.aspx.cs">
+      <DependentUpon>增加房源.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="增加房源.aspx.designer.cs">
+      <DependentUpon>增加房源.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="客服.aspx.cs">
+      <DependentUpon>客服.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="客服.aspx.designer.cs">
+      <DependentUpon>客服.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="我爱我家郑州.aspx.cs">
+      <DependentUpon>我爱我家郑州.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="我爱我家郑州.aspx.designer.cs">
+      <DependentUpon>我爱我家郑州.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="房东info2.0.aspx.cs">
+      <DependentUpon>房东info2.0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="房东info2.0.aspx.designer.cs">
+      <DependentUpon>房东info2.0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="管理员管理.aspx.cs">
+      <DependentUpon>管理员管理.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="管理员管理.aspx.designer.cs">
+      <DependentUpon>管理员管理.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="经纪人.aspx.cs">
+      <DependentUpon>经纪人.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="经纪人.aspx.designer.cs">
+      <DependentUpon>经纪人.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="经纪人个人信息.aspx.cs">
+      <DependentUpon>经纪人个人信息.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="经纪人个人信息.aspx.designer.cs">
+      <DependentUpon>经纪人个人信息.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="经纪人主页面.Master.cs">
+      <DependentUpon>经纪人主页面.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="经纪人主页面.Master.designer.cs">
+      <DependentUpon>经纪人主页面.Master</DependentUpon>
+    </Compile>
+    <Compile Include="经纪人展示.aspx.cs">
+      <DependentUpon>经纪人展示.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="经纪人展示.aspx.designer.cs">
+      <DependentUpon>经纪人展示.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="经纪人管理.aspx.cs">
+      <DependentUpon>经纪人管理.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="经纪人管理.aspx.designer.cs">
+      <DependentUpon>经纪人管理.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="金水_博颂路.aspx.cs">
+      <DependentUpon>金水_博颂路.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="金水_博颂路.aspx.designer.cs">
+      <DependentUpon>金水_博颂路.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="金水_绿城广场.aspx.cs">
+      <DependentUpon>金水_绿城广场.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="金水_绿城广场.aspx.designer.cs">
+      <DependentUpon>金水_绿城广场.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="金水_黄河路.aspx.cs">
+      <DependentUpon>金水_黄河路.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="金水_黄河路.aspx.designer.cs">
+      <DependentUpon>金水_黄河路.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="金水路段.aspx.cs">
+      <DependentUpon>金水路段.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="金水路段.aspx.designer.cs">
+      <DependentUpon>金水路段.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="headerAndFooter.Master" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\Rent.csprojResolveAssemblyReference.cache" />
+    <Content Include="header.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="经纪人主页面.Master" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{719f084f-8df0-464d-aa70-63ab9383ccb0}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ed9ba90e-04b7-4963-bbcb-2193bfc1235f}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

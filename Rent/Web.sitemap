@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="吉屋出租"  description="吉屋出租">
+      <siteMapNode url="经纪人.aspx" title="郑州"  description="郑州" >
+         <siteMapNode url="中原路段.aspx" title="中原路段"  description="中原路段" >
+            <siteMapNode url="中原_碧沙岗.aspx" title="碧沙岗"  description="碧沙岗" />
+           <siteMapNode url="中原_帝湖.aspx" title="帝湖"  description="帝湖" />
+           <siteMapNode url="中原_航海西路.aspx" title="航海西路"  description="航海西路" />
+      </siteMapNode>
+      <siteMapNode url="二七路段.aspx" title="二七路段"  description="二七路段" >
+        <siteMapNode url="二七_碧云路.aspx" title="碧云路"  description="碧云路" />
+        <siteMapNode url="二七_长江路.aspx" title="长江路"  description="长江路" />
+        <siteMapNode url="二七_大学中路.aspx" title="大学中路"  description="大学中路" />
+    </siteMapNode>
+      <siteMapNode url="金水路段.aspx" title="金水路段"  description="金水路段" >
+        <siteMapNode url="金水_博颂路.aspx" title="博颂路"  description="博颂路" />
+        <siteMapNode url="金水_绿城广场.aspx" title="绿城广场"  description="绿城广场" />
+        <siteMapNode url="金水_黄河路.aspx" title="黄河路"  description="黄河路" />
+         </siteMapNode>
+       </siteMapNode>
+     </siteMapNode>
+</siteMap>

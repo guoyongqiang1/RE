@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="经纪人主页面.master.cs" Inherits="WebApplication1.经纪人主页面" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            height: 21px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table>
+            <tr>
+                <td>
+    <h1>吉屋出租</h1>
+        您的位置是：<asp:SiteMapPath ID="SiteMapPath1" runat="server">
+        </asp:SiteMapPath>
+    <table width="1000px">
+        <tr>
+            <td class="auto-style1">
+                
+                城市：<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click1" >中原</asp:LinkButton>
+&nbsp;
+                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" >二七</asp:LinkButton>
+&nbsp;
+                <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">金水</asp:LinkButton>
+                
+                
+                <br />
+                <br />
+                
+                
+                <br />
+                
+                
+            </td>
+        </tr>
+        </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

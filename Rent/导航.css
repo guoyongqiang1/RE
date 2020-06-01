@@ -1,0 +1,206 @@
+.top-logo{
+    padding-top: 15px;
+    margin-right: 22px;
+}
+.top-logo .logo-img{
+    float: left;
+    display: block;
+    width: 101px;
+    height:51px;
+    text-indent: -1000em;
+    background-image: url(logo.jpg);
+    background-position:-29px -25px;
+    background-size:163px 107px;
+}
+.navbar-header{
+    float: left;
+}
+.user-img{
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+.top-city{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding:0 14px;
+    color: #333;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.top-city .icon-city{
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    margin-top: 6px;
+    background: url(https://res.5i5j.com/pc/common/images/city-dingwei.png);
+}
+.footer-box{
+    margin-top: 600px;
+    width: 100%;
+    height: 403px;
+    color: #292b33;
+    font-size: 12px;
+    font-family: "Microsoft YaHei",微软雅黑,"Hiragino Sans GB",Tahoma,Arial,"\5b8b\4f53",SimSun,sans-serif;
+    background-color: #1b242b;
+}
+.main{
+    width: 1180px;
+    margin: 0 auto;
+}
+.footer-nav-box{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    height: 60px;
+    height: 71px;
+    padding-top: 0px;
+}
+.footer-logo{
+float: left;
+margin-top: 14px;
+}
+.footer-logo .logo-img{
+text-decoration: none;
+display: block;
+text-indent: -1000em;
+width: 101px;
+height: 47px;
+background-image: url(logo.jpg);
+background-position:-29px -25px;
+background-size:163px 107px;
+}
+
+.footer-nav{
+margin: 0;
+padding: 0;
+width: 400px;
+height: 60px;
+float: right;
+}
+.footer-nav li{
+    display: inline-block;
+    width: 64px;
+    height: 60px;
+    margin-left: 33px;
+}
+.footer-nav a{
+text-decoration: none;
+line-height: 60px;
+font-size: 16px;
+color: #999;
+}
+
+
+.footer-info{
+border-bottom: 1px solid rgba(255,255,255,0.2);
+height: 137px;
+padding: 24px 0px 0px 0px;
+position: relative;
+}
+.f-iphone{
+margin: 0;
+padding: 0;
+margin-right: 96px;
+overflow: hidden;
+}
+.f-iphone dt{
+    width: 46px;
+    height: 46px;
+    float: left;
+}
+.f-iphone dt i{
+font-style: normal;
+width: 46px;
+height: 46px;
+background: url(https://res.5i5j.com/pc/common/images/com-icon.png) no-repeat;
+display: block;
+background-position: 0 0;
+}
+.footer-info .f-iphone dd{
+    color: #999;
+    font-size: 14px;
+    float: left;
+    line-height: 46px;
+    margin-left: 14px;
+}
+.footer-info .f-iphone .kf-num{
+color: #fbc700;
+font-size: 24px;
+float: left;
+line-height: 46px;
+margin-left: 14px;
+}
+.footer-info dd{
+    color: #999;
+    font-size: 14px;
+}
+
+.footer-code{
+position: absolute;
+right: 0;
+top: 25px;
+}
+.footer-code img{
+    width: 90px;
+    height: 90px;
+}
+.footer-code .code{
+    width: 90px;
+    height: 125px;
+    float: left;
+}
+.footer-code .code .wz{
+font-size: 14px;
+color: #999;
+text-align: center;
+margin-top: 8px;
+border: 1px solid #283036;
+border-radius: 15px;
+padding: 3px 0;
+}
+.footer-code .code2{
+float: left;
+margin-left: 70px;
+}
+.footer-cr{
+line-height: 59px;
+color: #797979;
+}
+.footer-jb{
+font-size: 14px;
+color: #999;
+padding-bottom: 20px;
+}
+.footer-jb .jb-font{
+color: #999;
+padding-right: 30px;
+font-size: 16px;
+}
+.footer-jb span{
+    padding-right: 30px; 
+}
+.beianhao{
+  padding-bottom: 25px;
+}
+.beianhao a{
+color: #323942;
+display: inline-block;
+text-decoration: none;
+height: 20px;
+line-height: 20px;
+}
+.beianhao a p{
+float: left;
+height: 20px;
+line-height: 20px;
+margin: 0px 0px 0px 5px;
+color: #939393;
+}
+.beianhao .f1{
+line-height: 20px;
+border: none;
+display: block;
+float: left;
+}
+

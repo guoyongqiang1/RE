@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="header.master.cs" Inherits="Rent.header" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="导航.css" />
+    <link rel="stylesheet" href="rightDaoHang.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div>
+       <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- 我爱我家左边logo -->
+            <div class="top-logo">
+                <a href="#" class="logo-img">吉屋出租</a>
+            </div>
+            <%-- 现在所在的位置 --%>
+            <div class="top-city">
+                <i class="icon-city"></i><asp:Label ID="Label1" runat="server" Text="郑州"></asp:Label>
+            </div>
+            <!-- 导航右边显示的主功能-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="houseInfo.aspx" class="">租房 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="Outsea.aspx" class="">海外</a></li>
+                    <li><a href="经纪人.aspx" class="agent" id="agent" runat="server">经纪人</a></li>
+                    <li><a href="houseknow.aspx" class="">知识</a></li>
+                    <li><a href="增加房源.aspx" class="addHouse" id="addHouse" runat="server"><asp:Label ID="Label4" runat="server" Text="我要出租"></asp:Label></a></li>
+                    <li><img class="user-img" src="https://res.5i5j.com/pc/user/images/user-img-default-small.png"alt=""/></li>
+                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+
+                    &nbsp;<!-- 个人中心下拉列表 --><li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><asp:Label ID="Label2" runat="server" Text=""></asp:Label><span class="caret"></span>
+                        </a>
+                        <%-- 房东时 --%>
+                        <ul class="dropdown-menu" id="usersXiaLa" runat="server">
+                            <li><a href="self1.aspx">个人信息管理</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li ><a href="userShouCang.aspx">查看房源收藏夹</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li ><a href="userShouCangAgent.aspx">查看经纪人收藏夹</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li><a href="userYiZuHouse.aspx">查看我的所有正在租的房子</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li><a href="userDaiJieZhangHouse.aspx">查看我的未付钱的房子</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="ZhuXiao.aspx">注销</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="TuiChu.aspx">退出</a>
+                            </li>
+                        </ul>
+                        <%-- 租户时 --%>
+                        <ul class="dropdown-menu" id="ownerXiaLa" runat="server">
+                            <li>
+                                <a href="ownerHouseInfo.aspx">个人信息</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="房东info2.0.aspx">个人信息修改</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="ZhuXiao.aspx">注销</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="TuiChu.aspx">退出</a>
+                            </li>
+                        </ul>
+                        <%-- 经纪人时 --%>
+                        <ul class="dropdown-menu" id="agentXiaLa" runat="server">
+                            <li>
+                                <a href="经纪人个人信息.aspx">个人信息管理</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="经纪人管理.aspx">房源信息管理</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="ZhuXiao.aspx">注销</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="TuiChu.aspx">退出</a>
+                            </li>
+                        </ul>
+
+                         <%-- 管理员时 --%>
+                        <ul class="dropdown-menu" id="adminXiaLa" runat="server">
+                            <li>
+                                <a href="self1.aspx">个人信息管理</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="ZhuXiao.aspx">注销</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="TuiChu.aspx">退出</a>
+                            </li>
+                        </ul>
+                         <%-- 登录前 --%>
+                        <ul class="dropdown-menu" id="BeforeLogin" runat="server">
+                            <li role="separator" class="divider"></li>
+                             <li><a href="Login-ap.aspx">登录</a></li>
+                            <li role="separator" class="divider"></li>
+
+                             <li><a href="Login-ap.aspx">注册</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <%-- 内容部分 --%>
+   
+   
+    <!-- 右侧条 -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    <div class="f1">
+        <ul class="f2">
+            <li class="guanzhu">
+                <i class=""><a href="#"> 关注</a></i>
+               
+            </li>
+            <li class="weituo">
+                <i class=""><a href="#"> 委托</a></i>
+            </li>
+            <li class="kefu">
+                <i class=""><a href="客服.aspx"> 客服</a></i>
+            </li>
+        </ul>
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

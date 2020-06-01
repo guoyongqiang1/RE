@@ -1,0 +1,37 @@
+﻿*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 930px;
+    height: 313px;
+    margin: 0 auto;
+    background-color: red;
+}
+#main #right{
+    width: 575px;
+    height: 132px;
+    float: right;
+    padding: 10px 0px 10px 35px;
+    background-color: green;
+}
+#main #right #title{
+    padding-bottom: 14px;
+}
+#main #right #Htype{
+    padding-bottom: 10px;
+}
+#main #right #Haddress{
+    padding-bottom: 10px;
+}
+#main #price{
+    float: right;
+    width: 90px;
+    height:100%;
+    text-align: center;
+    line-height: 152px;
+    background-color: yellow;
+}
