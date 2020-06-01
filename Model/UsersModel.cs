@@ -14,7 +14,6 @@ namespace Model
         public string userName { get; set; }
         public string userPhone { get; set; }
         public int userAge { get; set; }
-                                             
-        public int userA { get; set; }
+                                          
     }
 }
