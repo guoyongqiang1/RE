@@ -13,7 +13,11 @@ namespace WebApplication1
     {
         private void yao()
         {
-            SqlConnection con = new SqlConnection();
+            
+        } 
+        protected void Page_Load(object sender, EventArgs e)
+        {
+           SqlConnection con = new SqlConnection();
             con.ConnectionString = "server=.;database=Rent;uid=Rent;pwd=Rent";
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select * from agent where agentArea='金水'", con);
@@ -24,10 +28,6 @@ namespace WebApplication1
             this.GridView1.DataKeyNames = new string[] { "agentID" };
             this.GridView1.DataBind();
             con.Close();
-        } 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            this.yao();
         }
 
         protected void LinkButton1_Click1(object sender, EventArgs e)

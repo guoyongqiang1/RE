@@ -11,6 +11,7 @@ namespace BLL
 {
     public class 测试
     {
-
+        public DataTable sadas()
+        { }
     }
 }
