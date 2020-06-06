@@ -6,6 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using BLL;
+using DAL;
+using Model;
 
 namespace WebApplication1
 {
@@ -17,17 +20,12 @@ namespace WebApplication1
         } 
         protected void Page_Load(object sender, EventArgs e)
         {
-           SqlConnection con = new SqlConnection();
-            con.ConnectionString = "server=.;database=Rent;uid=Rent;pwd=Rent";
-            con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select * from agent where agentArea='金水'", con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            this.GridView1.DataSource = dt;
+          JinShuiBLL jinShuiBLL=new JinShuiBLL();
+            this.GridView1.DataSource =jinShuiBLL.getJinShuiTable();
             this.GridView1.DataKeyNames = new string[] { "agentID" };
             this.GridView1.DataKeyNames = new string[] { "agentID" };
             this.GridView1.DataBind();
-            con.Close();
+           
         }
 
         protected void LinkButton1_Click1(object sender, EventArgs e)
