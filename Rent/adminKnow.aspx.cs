@@ -5,7 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SqlClient; 
+using BLL;
+using Model;
 
 namespace Rent
 {
@@ -16,13 +18,12 @@ namespace Rent
             Panel1.Visible = false;
             if (!Page.IsPostBack)
             {
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = "server=127.0.0.1;database=Rent;uid=Rent;pwd=Rent";
-                con.Open();
+                
+               
+                DataTable dt =bll.
 
                 SqlDataAdapter sda = new SqlDataAdapter("select * from know", con);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
+               
                 this.GridView1.DataSource = dt;
                 this.GridView1.DataKeyNames = new string[] { "title" };
                 this.GridView1.DataBind();
