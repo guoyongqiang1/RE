@@ -1,5 +1,4 @@
-﻿
-using DAL;
+﻿using DAL;
 using Model;
 using System;
 using System.Collections.Generic;
@@ -10,8 +9,8 @@ using System.Text;
 
 namespace BLL
 {
-    public  class HouseBLL
-    {
+    public Class 金水路段BLL
+	{
 
-    }
+	}
 }
