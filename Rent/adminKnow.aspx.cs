@@ -20,7 +20,7 @@ namespace Rent
             {
                 
                
-                DataTable dt =bll.
+                DataTable dt =
 
                 SqlDataAdapter sda = new SqlDataAdapter("select * from know", con);
                
